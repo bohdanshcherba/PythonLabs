@@ -4,9 +4,7 @@ class Artificial_Christmas_tree:
     type = "Artificial"
     year = 2021
 
-    def __new__(cls, *args, **kwargs):
-        print("Constructor")
-        return super().__new__(cls)
+   
 
     def __init__(self, producer = 'unknown', height = 0 , price = 0, material = 'unknown'):
         self.producer = producer
@@ -21,7 +19,7 @@ class Artificial_Christmas_tree:
     def __str__(self):
         return f"Producer: {self.producer} \nHeight: {self.height}cm \nPrice: {self.price}$ \nMaterial: {self.material}"
 
-    static_pole = "tree"
+    static_pole = "static"
 
     @staticmethod
     def static_method(static_pole):
